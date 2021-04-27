@@ -1,0 +1,41 @@
+.advantages {
+  padding-top: 94px;
+}
+
+.advantages__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.advantages__grid-item {
+  --grid-item: 4;
+}
+
+.advantages__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--auxiliary-text-color);
+  margin: 0;
+  margin-top: 10px;
+}
+
+.advantages__item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--auxiliary-bg-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+
+@each $symbol in antenna, clock, diagram, astronaut {
+  .#{$symbol}-icon::before {
+    background-image: url("../images/images-features-section/#{$symbol}.svg");
+  }
+}
