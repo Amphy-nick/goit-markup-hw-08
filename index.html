@@ -25,9 +25,54 @@
 
                <a href="./index.html" class="logo page-header__logo">Web<span class="logo--black-color">Studio</span></a>
 
+            <div class="header__navigation--wrap">
+
                <ul class="navigation__list">
                   <li class="navigation__item">
-                     <a href="./index.html" class="navigation__link navigation__link--current">Студия</a>
+                     <a href="./index.html" class="navigation__link navigation__link--current navigation__link--pseudo-element">Студия</a>
+                  </li>
+                  <li class="navigation__item">
+                     <a href="./portfolio.html" class="navigation__link navigation__link--pseudo-element">Портфолио</a>
+                  </li>
+                  <li class="navigation__item">
+                     <a href="" class="navigation__link navigation__link--pseudo-element">Контакты</a>
+                  </li>
+               </ul>
+            </div>
+               </nav>
+            <div class="header__contacts--wrap">
+               <ul class="contacts">
+                  <li class="contacts__item">
+                     <a href="mailto:D_burkovskui@ukr.net" class="contacts__link">
+                        <svg class="contacts__icon--mail">
+                           <use href="./images/svg-icons/sprite.svg#icon-message"></use>
+                        </svg> D_burkovskui@ukr.net
+                     </a>
+                  </li>
+                  <li class="contacts__item">
+                     <a href="tel:+380975112290" class="contacts__link">
+                        <svg class="contacts__icon--phone">
+                           <use href="./images/svg-icons/sprite.svg#icon-phone"></use>
+                        </svg>+38 097 511 22 90
+                     </a>
+                  </li>
+               </ul>
+            </div>
+
+            <button class="mobile-menu--button" data-menu-button>
+               <svg class="contacts__icon--phone">
+                  <use class="icon-menu" href="./images/svg-icons/sprite.svg#icon-menu-mobile"></use>
+                  <use class="icon-close" href="./images/svg-icons/sprite.svg#icon-close-menu"></use>
+               </svg>
+            </button>
+ 
+         </div>
+      </header>
+
+            <div class="mobile-menu" data-menu>
+               <ul class="navigation__list">
+                  <li class="navigation__item">
+                     <a href="./index.html" class="navigation__link">Студия</a>
                   </li>
                   <li class="navigation__item">
                      <a href="./portfolio.html" class="navigation__link">Портфолио</a>
@@ -36,36 +81,35 @@
                      <a href="" class="navigation__link">Контакты</a>
                   </li>
                </ul>
-            </nav>
 
-            <ul class="contacts">
-               <li class="contacts__item">
-                  <a href="mailto:D_burkovskui@ukr.net" class="contacts__link">
-                     <svg class="contacts__icon--mail">
-                        <use href="./images/svg-icons/sprite.svg#icon-message"></use>
-                     </svg> D_burkovskui@ukr.net
-                  </a>
-               </li>
-               <li class="contacts__item">
-                  <a href="tel:+380975112290" class="contacts__link">
-                     <svg class="contacts__icon--phone">
-                        <use href="./images/svg-icons/sprite.svg#icon-phone"></use>
-                     </svg>+38 097 511 22 90
-                  </a>
-               </li>
-            </ul>
-         </div>
-      </header>
-
+               <ul class="contacts">
+                  <li class="contacts__item">
+                     <a href="mailto:D_burkovskui@ukr.net" class="contacts__link">
+                       D_burkovskui@ukr.net
+                     </a>
+                  </li>
+                  <li class="contacts__item">
+                     <a href="tel:+380975112290" class="contacts__link">
+                        +38 097 511 22 90
+                     </a>
+                  </li>
+               </ul>
+               <ul class="mobile-menu__social-list mobile-menu__social-list-position">
+                  <li class="mobile-menu__social-item"><a class="mobile-menu__social-link" href="">Instagram</a></li>
+                  <li class="mobile-menu__social-item"><a class="mobile-menu__social-link" href="">Twitter</a></li>
+                  <li class="mobile-menu__social-item"><a class="mobile-menu__social-link" href="">Facebook</a></li>
+                  <li class="mobile-menu__social-item"><a class="mobile-menu__social-link" href="">LinkedIn</a></li>
+               </ul>
+            </div>
       <!-- Hero section page 1-->
 
       <main>
-         <section class="hero">
+         <!-- <section class="hero">
             <div class="hero__content">
                <h1 class="hero__title">эффективные решения для вашего бизнеса</h1>
                <button type="button" class="button button__hero" data-modal-open>Заказать услугу</button>
             </div>
-         </section>
+         </section> -->
 
          <!-- Advantages-section -->
 
@@ -99,7 +143,7 @@
 
          <!-- Potfоlio section-->
 
-         <section class="portfolio section">
+         <!-- <section class="portfolio section">
 
             <div class="container">
                <h2 class="section-title portfolio__title">Чем мы занимаемся</h2>
@@ -130,7 +174,7 @@
                   </li>
                </ul>
             </div>
-         </section>
+         </section> -->
 
          <!-- Our team section -->
 
@@ -362,7 +406,7 @@
 
       <!-- Footer -->
 
-      <footer class="page-footer">
+      <!-- <footer class="page-footer">
          <div class="container page-footer__container">
             <div class="footer__address-part">
 
@@ -436,11 +480,11 @@
 
             </div>
          </div>
-      </footer>
+      </footer> -->
 
       <!-- Modal window -->
 
-      <div class="modal__backdrop is-hidden" data-modal>
+      <!-- <div class="modal__backdrop is-hidden" data-modal>
          <div class="modal">
             <button class="modal__close-button" data-modal-close>
                <svg class="modal__icon_exit">
@@ -492,9 +536,9 @@
                <button class="submit-button button" type="submit">Отправить</button>
             </form> 
          </div>
-      </div>
-
+      </div>-->
       <script src="./js/modal.js"></script>
+      <script src="./js/menu.js"></script>
    </body>
 
-</html>
+</html> 

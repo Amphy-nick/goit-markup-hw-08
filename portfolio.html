@@ -23,38 +23,49 @@
             <nav class="navigation">
 
                <a href="./index.html" class="logo page-header__logo">Web<span class="logo--black-color">Studio</span></a>
+               <div class="header__navigation--wrap">
 
-               <ul class="navigation__list">
-                  <li class="navigation__item">
-                     <a href="./index.html" class="navigation__link">Студия</a>
-                  </li>
-                  <li class="navigation__item">
-                     <a href="./portfolio.html" class="navigation__link navigation__link--current">Портфолио</a>
-                  </li>
-                  <li class="navigation__item">
-                     <a href="" class="navigation__link">Контакты</a>
-                  </li>
-               </ul>
+                  <ul class="navigation__list">
+                     <li class="navigation__item">
+                        <a href="./index.html" class="navigation__link">Студия</a>
+                     </li>
+                     <li class="navigation__item">
+                        <a href="./portfolio.html" class="navigation__link navigation__link--current">Портфолио</a>
+                     </li>
+                     <li class="navigation__item">
+                        <a href="" class="navigation__link">Контакты</a>
+                     </li>
+                  </ul>
+               </div>
             </nav>
+   <div class="header__contacts--wrap">
+      <ul class="contacts">
+         <li class="contacts__item">
+            <a href="mailto:D_burkovskui@ukr.net" class="contacts__link">
+               <svg class="contacts__icon--mail">
+                  <use href="./images/svg-icons/sprite.svg#icon-message"></use>
+               </svg> D_burkovskui@ukr.net
+            </a>
+         </li>
+         <li class="contacts__item">
+            <a href="tel:+380975112290" class="contacts__link">
+               <svg class="contacts__icon--phone">
+                  <use href="./images/svg-icons/sprite.svg#icon-phone"></use>
+               </svg>+38 097 511 22 90
+            </a>
+         </li>
+      </ul>
+   </div>
 
-            <ul class="contacts">
-               <li class="contacts__item">
-                  <a href="mailto:D_burkovskui@ukr.net" class="contacts__link">
-                     <svg class="contacts__icon--mail">
-                        <use href="./images/svg-icons/sprite.svg#icon-message"></use>
-                     </svg> D_burkovskui@ukr.net
-                  </a>
-               </li>
-               <li class="contacts__item">
-                  <a href="tel:+380975112290" class="contacts__link">
-                     <svg class="contacts__icon--phone">
-                        <use href="./images/svg-icons/sprite.svg#icon-phone"></use>
-                     </svg>+38 097 511 22 90
-                  </a>
-               </li>
-            </ul>
-         </div>
-      </header>
+   <button class="mobile-menu--button">
+      <svg class="mobile-menu--icon">
+         <use class="icon-menu" href="./images/svg-icons/sprite.svg#icon-menu-mobile"></use>
+         <use class="icon-close" href="./images/svg-icons/sprite.svg#icon-close-menu"></use>
+      </svg>+38 097 511 22 90
+   </button>
+
+</div>
+</header>
 
       <!-- Portfolio section -->
 
@@ -74,10 +85,10 @@
 
                <ul class="product-list grid">
 
-                  <li class="grid-item">
-                    <article class="product">
+                  <li class="grid-item portfolio-page__item">
+                     <article class="product">
                         <a href="" class="product__link">
-                           <div class="thumb thumb--overfolw-hidden">
+                           <div class="thumb--overfolw-hidden thumb">
                               <img src="./images/images-portfolio/img(8).jpg" alt="Команда" width="370" height="294">
                               <div class="product__description">
                                  <p class="product__text">Технокряк это современная площадка распространения коронавируса.
@@ -88,13 +99,13 @@
                            </div>
                            <div class="product__meta">
                               <h3 class="product__name">Технокряк</h3>
-                              <p class="product__field">Веб-сайт</p>
+                              <p class="product__field">Дизайн</p>
                            </div>
                         </a>
-                    </article>
+                     </article>
                   </li>
 
-                  <li class="grid-item">
+                  <li class="grid-item portfolio-page__item">
                      <article class="product">
                         <a href="" class="product__link">
                            <div class="thumb--overfolw-hidden thumb">
@@ -114,7 +125,7 @@
                      </article>
                   </li>
 
-                  <li class="grid-item">
+                  <li class="grid-item portfolio-page__item">
                      <article class="product">
                         <a href="" class="product__link">
                            <div class="thumb--overfolw-hidden thumb">
@@ -134,7 +145,7 @@
                      </article>
                   </li>
 
-                  <li class="grid-item">
+                  <li class="grid-item portfolio-page__item">
                      <article class="product">
                         <a href="" class="product__link">
                            <div class="thumb--overfolw-hidden thumb">
@@ -154,7 +165,7 @@
                      </article>
                   </li>
 
-                  <li class="grid-item">
+                  <li class="grid-item portfolio-page__item">
                      <article class="product">
                         <a href="" class="product__link">
                            <div class="thumb--overfolw-hidden thumb">
@@ -174,7 +185,7 @@
                      </article>
                   </li>
 
-                  <li class="grid-item">
+                  <li class="grid-item portfolio-page__item">
                      <article class="product">
                         <a href="" class="product__link">
                            <div class="thumb--overfolw-hidden thumb">
@@ -194,7 +205,7 @@
                      </article>
                   </li>
 
-                  <li class="grid-item">
+                  <li class="grid-item portfolio-page__item">
                      <article class="product">
                         <a href="" class="product__link">
                            <div class="thumb--overfolw-hidden thumb">
@@ -214,7 +225,7 @@
                      </article>
                   </li>
 
-                  <li class="grid-item">
+                  <li class="grid-item portfolio-page__item">
                      <article class="product">
                         <a href="" class="product__link">
                            <div class="thumb--overfolw-hidden thumb">
@@ -234,7 +245,7 @@
                      </article>
                   </li>
 
-                  <li class="grid-item">
+                  <li class="grid-item portfolio-page__item">
                      <article class="product">
                         <a href="" class="product__link">
                            <div class="thumb--overfolw-hidden thumb">
@@ -262,7 +273,7 @@
 
       <!-- Footer -->
 
-      <footer class="page-footer">
+      <!-- <footer class="page-footer">
          <div class="container page-footer__container">
 
             <div class="page-footer__address-part">
@@ -340,7 +351,7 @@
             </div>
 
          </div>
-      </footer>
+      </footer> -->
 
    </body>
 

@@ -43,6 +43,13 @@
   text-decoration: none;
   transition: color var(--animation);
 
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}
+
+.navigation__link--pseudo-element {
   &::after {
     content: "";
     width: 100%;
@@ -50,7 +57,7 @@
     border-radius: 2px;
     background-color: var(--accent-text-color);
     position: absolute;
-    bottom: -32px;
+    bottom: -35px;
     left: 0;
     opacity: 0;
     transition: opacity var(--animation);
@@ -78,7 +85,7 @@
     border-radius: 2px;
     background-color: var(--accent-text-color);
     position: absolute;
-    bottom: -32px;
+    bottom: -35px;
     left: 0;
     opacity: 1;
   }
