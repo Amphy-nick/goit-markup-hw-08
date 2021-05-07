@@ -1,12 +1,15 @@
 .contacts {
    display: inline-flex;
    list-style: none;
-   padding-left: 0;
+   padding: 0;
    margin: 0;
 
-   // @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-   //    flex-wrap: wrap;
-   // }
+   @media screen and (max-width: 1199.98px) {
+      flex-direction: column;
+      margin-left: auto;
+      padding-top: 21px;
+      padding-bottom: 21px;
+   }
 }
 
 .contacts__item:not(:last-child) {

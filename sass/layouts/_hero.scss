@@ -5,8 +5,13 @@
   background-position: center;
   background-size: cover;
   background-color: #c4c4c4;
-  padding-bottom: 200px;
-  padding-top: 200px;
+  padding-bottom: 118px;
+  padding-top: 118px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
 }
 
 .hero,
@@ -17,17 +22,27 @@
 }
 
 .hero__content {
-  max-width: 696px;
+  max-width: 360px;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+  }
 }
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-bg-color);
   margin: 0;
+  text-align: center;
+  font-size: 26px;
+  line-height: 1.62;
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .button__hero {
