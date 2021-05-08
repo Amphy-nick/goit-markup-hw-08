@@ -1,3 +1,9 @@
+.portfolio {
+  @media screen and (max-width: 1199.98px) {
+    display: none;
+  }
+}
+
 .portfolio__title {
   margin-bottom: 50px;
 }
