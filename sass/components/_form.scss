@@ -11,16 +11,11 @@
 .order-service-form__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.5px;
+  line-height: 1.15px;
   text-align: center;
   color: var(--main-text-color);
   margin: 0;
-  padding: 0;
   margin-bottom: 12px;
-
-  @media screen and (min-width: 1200px) {
-    line-height: 1.15;
-  }
 }
 
 .order-service-form__label {
