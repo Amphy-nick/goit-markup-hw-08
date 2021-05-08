@@ -11,11 +11,15 @@
 .order-service-form__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15px;
+  line-height: 1.5;
   text-align: center;
   color: var(--main-text-color);
   margin: 0;
   margin-bottom: 12px;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .order-service-form__label {
@@ -68,6 +72,7 @@
   margin-top: 4px;
   padding: 12px 16px 0;
   transition: border-color var(--animation);
+  margin-bottom: 20px;
 
   &::placeholder {
     font-weight: 400;

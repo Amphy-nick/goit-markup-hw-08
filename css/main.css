@@ -310,21 +310,9 @@ img {
   line-height: 1.18;
 }
 
-@media screen and (max-width: 400px) {
-  .mobile-menu .navigation__link {
-    font-size: 35px;
-  }
-}
-
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 479.98px) {
   .mobile-menu .navigation__link {
     font-size: 30px;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  .mobile-menu .navigation__link {
-    font-size: 25px;
   }
 }
 
@@ -346,21 +334,9 @@ img {
   margin-bottom: 32px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 479.98px) {
   .mobile-menu .contacts__link--tel {
-    font-size: 35px;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .mobile-menu .contacts__link--tel {
-    font-size: 30px;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  .mobile-menu .contacts__link--tel {
-    font-size: 25px;
+    font-size: 22px;
   }
 }
 
@@ -370,6 +346,12 @@ img {
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--auxiliary-text-color);
+}
+
+@media screen and (max-width: 479.98px) {
+  .mobile-menu .contacts__link--mail {
+    font-size: 17px;
+  }
 }
 
 .mobile-menu__social-list {
@@ -401,21 +383,9 @@ img {
   text-decoration: none;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 479.98px) {
   .mobile-menu__social-link {
-    font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .mobile-menu__social-link {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  .mobile-menu__social-link {
-    font-size: 8px;
+    font-size: 11px;
   }
 }
 
@@ -533,12 +503,25 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 100%;
-  max-width: 528px;
-  min-height: 581px;
+  max-width: 450px;
+  min-height: 609px;
   background: var(--main-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 300ms ease-out 1ms;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .modal {
+    width: 90vw;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .is-hidden .modal {
@@ -590,11 +573,17 @@ img {
 .order-service-form__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15px;
+  line-height: 1.5;
   text-align: center;
   color: var(--main-text-color);
   margin: 0;
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .order-service-form__title {
+    line-height: 1.15;
+  }
 }
 
 .order-service-form__label {
@@ -647,6 +636,7 @@ img {
   margin-top: 4px;
   padding: 12px 16px 0;
   transition: border-color var(--animation);
+  margin-bottom: 20px;
 }
 
 .order-service-form__feedback::placeholder {
@@ -686,23 +676,25 @@ img {
 }
 
 .check {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
   color: var(--auxiliary-text-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
 .modal__link--checkbox {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
   text-decoration-line: underline;
   color: var(--accent-text-color);
-  margin-left: 3px;
 }
 
 .check__input {
@@ -1183,17 +1175,25 @@ img {
 }
 
 .hero {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-image.png);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/background-image1xmobile.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: #c4c4c4;
+  max-width: 1600px;
   padding-bottom: 118px;
   padding-top: 118px;
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/background-image1xtablet.png);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/dekstop/background-image1xdekstop.png);
     padding-bottom: 200px;
     padding-top: 200px;
   }
