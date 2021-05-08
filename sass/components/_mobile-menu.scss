@@ -109,6 +109,18 @@
   letter-spacing: 0.02em;
   color: var(--accent-text-color);
   margin-bottom: 32px;
+
+  @media screen and (max-width: 400px) {
+    font-size: 35px;
+  }
+
+  @media screen and (max-width: 350px) {
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 300px) {
+    font-size: 25px;
+  }
 }
 
 .mobile-menu .contacts__link--mail {
